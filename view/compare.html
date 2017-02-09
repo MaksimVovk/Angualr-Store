@@ -1,0 +1,75 @@
+<section class="mar-bottom">
+    <div class="content" ng-controller="compareCtrl">
+        <div class="popular">Сравнение товаров</div>
+        <div class="compare-bl">
+
+            <table class="table border-top-none">
+                <tr class="">
+                    <td></td>
+                    <td class="img-com"><img ng-src="{{compareArray[0].images[0]}}" alt="" class="compare-img">
+                    </td>
+                    <td class="img-com"><img ng-src="{{compareArray[1].images[0]}}" alt="" class="compare-img">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>{{compareArray[0].name}}</td>
+                    <td>{{compareArray[1].name}}</td>
+                </tr>
+                <tr>
+                    <td>Процессор</td>
+                    <td>{{compareArray[0].cpu}}</td>
+                    <td>{{compareArray[1].cpu}}</td>
+                </tr>
+
+                <tr>
+                    <td>Экран</td>
+                    <td>{{compareArray[0].display}}</td>
+                    <td>{{compareArray[1].display}}</td>
+                </tr>
+                <tr>
+                    <td>Объем оперативной памяти</td>
+                    <td>{{compareArray[0].ram}}</td>
+                    <td>{{compareArray[1].ram}}</td>
+                </tr>
+                <tr>
+                    <td>Операционная система</td>
+                    <td>{{compareArray[0].os | trueFalse}}</td>
+                    <td>{{compareArray[1].os | trueFalse}}</td>
+                </tr>
+                <tr>
+                    <td>HDD</td>
+                    <td>{{compareArray[0].hdd | trueFalse}}</td>
+                    <td>{{compareArray[1].hdd | trueFalse}}</td>
+                </tr>
+                <tr>
+                    <td>SDD</td>
+                    <td>{{compareArray[0].sdd | trueFalse}}</td>
+                    <td>{{compareArray[1].sdd | trueFalse}}</td>
+                </tr>
+                <tr>
+                    <td>Оптический привод</td>
+                    <td>{{compareArray[0].cd | trueFalse}}</td>
+                    <td>{{compareArray[1].cd | trueFalse}}</td>
+                </tr>
+                <tr>
+                    <td>Графический адаптер</td>
+                    <td>{{compareArray[0].va }}</td>
+                    <td>{{compareArray[1].va }}</td>
+                </tr>
+                <tr>
+                    <td>Вес</td>
+                    <td>{{compareArray[0].weight }}</td>
+                    <td>{{compareArray[1].weight }}</td>
+                </tr>
+                <tr>
+                    <td>Гарантия</td>
+                    <td>{{compareArray[0].service }}</td>
+                    <td>{{compareArray[1].service }}</td>
+                </tr>
+            </table>
+            <button type="button" class="btn btn-danger center-btn" ng-click="deleteCompare()">Очистить</button>
+        </div>
+
+    </div>
+</section>

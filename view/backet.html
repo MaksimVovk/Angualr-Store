@@ -1,0 +1,66 @@
+<section>
+    <div class="content" ng-controller="backetCtrl">
+        <div class="popular">Оформление заказа</div>
+        <div class="view-order">
+            <div class="order-left">
+                <p class="orderIn">Состав заказа</p>
+                <ul class="product-fild-order">
+
+                    <li ng-repeat="product in order ">
+                        <div class="product-order">
+                            <div class="order-prod-info">
+                                <img ng-src="{{product.images[0]}}" alt="" class="img-order">
+                                <h6 class="order-title"><a href="/{{product.id}}">{{product.name}}</a></h6>
+                                <p class="price-order"><span class="x_price">{{product.price | number}}</span> ₴</p>
+
+                                <div class="close icon" value="{{product.id}}" ng-click="deleteOrder(product)"></div>
+                            </div>
+
+                        </div>
+                    </li>
+                </ul>
+                <div class="get-up-full-price">
+                    <p class="full-price">Cумма к оплате: <span class="total-summ">{{totalPrice | number}}</span><span class="total-summ"> ₴</span></p>
+                </div>
+            </div>
+            <div class="order-right">
+                <p class="out-title">Ваши данные</p>
+                <form ng-submit="sendOrder()">
+
+                    <div class="form-group">
+                        <label>Имя Фамилия</label>
+                        <input type="" name="name" value="" placeholder="Имя Фамилия" class="form-control" ng-model="userNameI">
+                    </div>
+                    <div class="form-group">
+                        <label>Телефон</label>
+                        <input type="text" name="phone" placeholder="Телефон" class="form-control" ng-model="userPhoneI">
+                    </div>
+                    <div class="form-group">
+                        <label>Город</label>
+                        <input type="text" placeholder="Город" class="form-control" ng-model="userCityI">
+                    </div>
+                    <div class="form-group">
+                        <label>Улица</label>
+                        <input type="text" placeholder="Улица" class="form-control" ng-model="userStreetI">
+                    </div>
+                    <div class="form-group">
+                        <label>Дом</label>
+                        <input type="text" placeholder="Дом" class="form-control" ng-model="userHouseI">
+                    </div>
+                    <div class="form-group">
+                        <label>Квартира</label>
+                        <input type="text" placeholder="Квартира" class="form-control" ng-model="userFlatI">
+                    </div>
+
+                    <button type="submit" class="btn btn-info">Оформить заказ</button>
+
+
+
+
+                </form>
+            </div>
+            <div class="clear"></div>
+
+        </div>
+    </div>
+</section>

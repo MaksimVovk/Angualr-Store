@@ -1,0 +1,25 @@
+<section>
+    <div class="content" ng-controller="successCtrl">
+        <div class="popular">Спасибо, Ваш заказ принят</div>
+        <div class="view-order">
+            <div class="order-success">
+                <p class="orderIn">Состав заказа</p>
+                <ul class="product-fild-order">
+
+                    <li ng-repeat="product in orderSuccess ">
+                        <div class="product-order">
+                            <div class="order-prod-info">
+                                <img ng-src="{{product.images[0]}}" alt="" class="img-order">
+                                <h6 class="order-title"><a href="/{{product.id}}">{{product.name}}</a></h6>
+                            </div>
+
+                        </div>
+                    </li>
+                </ul>
+                <div class="get-up-full-price">
+                    <p class="full-price">Cумма к оплате: <span class="total-summ">{{totalPrice | number}}</span><span class="total-summ"> ₴</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

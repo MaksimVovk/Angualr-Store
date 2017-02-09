@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="storeApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Store</title>
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700|Rubik:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+    <script src="js/angular.js"></script>
+    <script src="js/angular-route.js"></script>
+    <script src="js/google.chart.js"></script>
+    <base href="/">
+</head>
+
+<body ng-controller="mainCtrl">
+    <header>
+        <div class="content border">
+            <p class="logo"><a href="/">store</a></p>
+            <div class="nav">
+                <ul class="nav-ul">
+                    <li><a href="/notebook">Ноутбуки</a></li>
+                    <li><a href="/computer">Компьютеры</a></li>
+                    <li><a href="" class="compare-link" ng-click="toCompare()">Сравнение</a></li>
+                    <li><a href="/about">Статистика</a></li>
+                </ul>
+            </div>
+            <div class="fomr-search-bag">
+                <a href="/mystore" class="enter">Мой кабинет</a>
+                <a href="/backet"><i class="fa fa-shopping-cart"><span ng-controller="productInfoCtrl">( {{$r.numOrder}} )</span></i> </a></div>
+            <div class="clear"></div>
+        </div>
+
+    </header>
+    <div class="wr">
+        <ng-view></ng-view>
+    </div>
+    <footer class="navbar-fixed-bottom">
+        <div class="content">
+            <p class="demo-txt">JavaScript 2016</p>
+        </div>
+    </footer>
+    <div class="addOrder" ng-hide="showMes" ng-cloak>
+        <p class="addOrder-title">{{alertMess}}</p>
+    </div>
+
+    <script src="controller/controllers.js"></script>
+    <script src="controller/mainCtrl.js"></script>
+    <script src="controller/mystoreCtrl.js"></script>
+    <script src="controller/backetCtrl.js"></script>
+    <script src="controller/productInfoCtrl.js"></script>
+    <script src="controller/successCtrl.js"></script>
+    <script src="controller/config.js"></script>
+    <script src="controller/compareCtrl.js"></script>
+    <script src="controller/aboutCtrl.js"></script>
+    <script src="controller/filter.js"></script>
+
+
+
+</body>
+
+</html>

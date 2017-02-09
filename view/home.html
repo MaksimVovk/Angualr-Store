@@ -1,0 +1,17 @@
+<section>
+    <div class="content" ng-controller="mainCtrl">
+        <div class="popular">Популярные товары</div>
+        <ul class="product-fild">
+            <li ng-repeat="product in produts.notebook | sortLastAdd | limitTo:3 ">
+                <div class="product"> <img ng-src="{{product.images[0]}}" alt="" class="img-prod">
+                    <h6><a href="/{{product.id}}">{{product.name}}</a></h6>
+                    <p class="price"><span class="x_price">{{product.price }}</span> ₴</p> <a href="/{{product.id}}" class="bay-order">Детально</a> </div>
+            </li>
+            <li ng-repeat="product in produts.computer|  sortLastAdd | limitTo : 3">
+                <div class="product"> <img ng-src="{{product.images[0]}}" alt="" class="img-prod">
+                    <h6><a href="/{{product.id}}">{{product.name}}</a></h6>
+                    <p class="price"><span class="x_price">{{product.price}}</span> ₴</p> <a href="/{{product.id}}" class="bay-order">Детально</a> </div>
+            </li>
+        </ul>
+    </div>
+</section>

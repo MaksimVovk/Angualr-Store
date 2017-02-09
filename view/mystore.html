@@ -1,0 +1,98 @@
+<section ng-controller="mystoreCtrl" class="regEnter">
+    <div class="change-form" ng-show="mStore">
+        <div class="chouseForm">
+            <a href="" class="enterStore active" ng-click="enter($event)">Я постоянный клиент</a>
+            <a href="" class="regStore" ng-click="reg($event)">Я новый покупатель</a>
+        </div>
+        <div class="form-enter-div" ng-show="checkForm">
+            <p class="titleEnter">Вход в интернет-магазин</p>
+            <form class="form-enter" ng-submit="enterUser()">
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" class="form-control" placeholder="Email" ng-model="userEmailEnter">
+                </div>
+                <div class="form-group">
+                    <label>Пароль</label>
+                    <input type="password" class="form-control" placeholder="Пароль" ng-model="userPasswordEnter">
+                </div>
+                <button type="submit" class="btn btn-info">Отправить</button>
+            </form>
+        </div>
+        <div class="form-enter-div" ng-hide="checkForm">
+            <p class="titleEnter">Регестрация</p>
+            <form class="form-reg" ng-submit="registerUser()">
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" class="form-control" placeholder="Email" ng-model="emailUser" name="email">
+                </div>
+                <div class="form-group">
+                    <label>Пароль</label>
+                    <input type="password" class="form-control" placeholder="Пароль" ng-model="passwordUser" name="password">
+                </div>
+
+                <div class="form-group">
+                    <label>Имя Фамилия</label>
+                    <input type="name" class="form-control" placeholder="Имя Фамилия" ng-model="userName">
+                </div>
+                <div class="form-group">
+                    <label>Телефон</label>
+                    <input type="tel" class="form-control" placeholder="Телефон" ng-model="userTel">
+                </div>
+                <div class="form-group">
+                    <label>Город</label>
+                    <input type="text" class="form-control" placeholder="Город" ng-model="userCity">
+                </div>
+                <div class="form-group">
+                    <label>Улица</label>
+                    <input type="text" class="form-control" placeholder="Улица" ng-model="userStreet">
+                </div>
+                <div class="form-group">
+                    <label>Дом</label>
+                    <input type="text" class="form-control" placeholder="Дом" ng-model="userHouse">
+                </div>
+                <div class="form-group">
+                    <label>Квартира</label>
+                    <input type="text" class="form-control" placeholder="Квартира" ng-model="userFlat">
+                </div>
+                <button type="submit" class="btn btn-info">Отправить</button>
+            </form>
+        </div>
+    </div>
+    <div class="user-info" ng-hide="mStore">
+        <p class="title-info-user">Информация о пользователе</p>
+        <table class="table">
+            <tr>
+                <td>Email</td>
+                <td>{{userIn.email}}</td>
+            </tr>
+            <tr>
+                <td>Имя Фамилия</td>
+                <td>{{userIn.name}}</td>
+            </tr>
+            <tr>
+                <td>Телефон</td>
+                <td>{{userIn.phone}}</td>
+            </tr>
+            <tr>
+                <td>Город</td>
+                <td>{{userIn.city}}</td>
+            </tr>
+            <tr>
+                <td>Улица</td>
+                <td>{{userIn.street}}</td>
+            </tr>
+            <tr>
+                <td>Дом</td>
+                <td>{{userIn.house}}</td>
+            </tr>
+            <tr>
+                <td>Квартира</td>
+                <td>{{userIn.flat}}</td>
+            </tr>
+        </table>
+        <button class="exit btn btn-danger" ng-click="exitFromAccount()">Выйти</button>
+    </div>
+    <div class="addOrder" ng-hide="showM" ng-cloak>
+        <p class="addOrder-title">{{alertM}}</p>
+    </div>
+</section>

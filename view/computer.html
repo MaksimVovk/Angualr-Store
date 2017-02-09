@@ -1,0 +1,76 @@
+<section>
+    <div class="content" ng-controller="productCtrl">
+        <div class="popular">Компьютеры</div>
+        <div class="filters">
+            <div class="group">
+                <p class="title-group">Операционная система</p>
+                <ul>
+                    <li>
+                        <input type="checkbox" name="" value="" ng-model="osFamily.windows" checked="" id="win"> <label class="what-filters" for="win">Windows</label>
+                        <div class="clear"></div>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="" value="" id="mac" ng-model="osFamily.mac" checked="">
+                        <label class="what-filters" for="mac">Mac OS</label>
+                        <div class="clear"></div>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="" value="" id="lin" ng-model="osFamily.linux" checked="">
+                        <label class="what-filters" for="lin">Linux</label>
+                        <div class="clear"></div>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="" value="" id="dos" ng-model="osFamily.dos" checked="">
+                        <label class="what-filters" for="dos">DOS</label>
+                        <div class="clear"></div>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="group">
+                <p class="title-group">Производитель</p>
+                <ul>
+                    <li>
+                        <input type="checkbox" name="" value="" ng-model="family.Asus" checked="" id="Asus"> <label class="what-filters" for="Asus">Asus</label>
+                        <div class="clear"></div>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="" value="" id="Lenovo" ng-model="family.Lenovo" checked="">
+                        <label class="what-filters" for="Lenovo">Lenovo</label>
+                        <div class="clear"></div>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="" value="" id="Acer" ng-model="family.Acer" checked="">
+                        <label class="what-filters" for="Acer">Acer</label>
+                        <div class="clear"></div>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="" value="" id="Dell" ng-model="family.Dell" checked="">
+                        <label class="what-filters" for="Dell">Dell</label>
+                        <div class="clear"></div>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="" value="" id="HP" ng-model="family.HP" checked="">
+                        <label class="what-filters" for="HP">HP</label>
+                        <div class="clear"></div>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="" value="" id="Apple" ng-model="family.Apple" checked="">
+                        <label class="what-filters" for="Apple">Apple</label>
+                        <div class="clear"></div>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="search-form"> <input type="text" ng-model="filters" class="form-control" placeholder="Поиск"></div>
+            <div class="clear"></div>
+        </div>
+        <ul class="product-fild">
+            <li ng-repeat="product in produts.computer | filter:filters | checkOs:osFamily | checkMade:family">
+                <div class="product"> <img ng-src="{{product.images[0]}}" alt="" class="img-prod">
+                    <h6><a href="/{{product.id}}">{{product.name}}</a></h6>
+                    <p class="price"><span class="x_price">{{product.price}}</span> ₴</p> <a href="/{{product.id}}" class="bay-order">Детально</a> </div>
+            </li>
+        </ul>
+    </div>
+</section>

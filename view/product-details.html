@@ -1,0 +1,85 @@
+<section class="wrap">
+    <div class="content" ng-controller="productInfoCtrl">
+        <div class="popular">
+            <p class="name">{{prodInfo.name}}</p>
+            <div class="img-bl">
+                <img ng-src="{{prodInfo.images[0]}}" alt="" class="image-prod">
+            </div>
+            <div class="info-bl">
+                <div class="info-price-bay">
+                    <p class="price-info"><span class="x_price ng-binding">{{prodInfo.price}}</span>&thinsp;₴</p>
+                    <button class="bay-order-backet" ng-click="buttonBay()">Купить</button></div>
+                <svg width="27" height="22" ng-click="getToCompare(prodInfo)">
+ <line x1="14" y1="5" x2="14" y2="20" style="stroke:rgb(0,0,0);stroke-width:3" />
+        <line x1="4" y1="5" x2="24" y2="5" style="stroke:rgb(0,0,0);stroke-width:1" />
+        <line x1="4.5" y1="5" x2="2" y2="13" style="stroke:rgb(0,0,0);stroke-width:1" />
+<line x1="4.5" y1="5" x2="7" y2="13" style="stroke:rgb(0,0,0);stroke-width:1" />
+<ellipse cx="4.5" cy="14" rx="3" ry="2" style="fill:#000;stroke:#000;stroke-width:1" />
+
+
+<line x1="23.5" y1="5" x2="21" y2="13" style="stroke:rgb(0,0,0);stroke-width:1" />
+<line x1="23.5" y1="5" x2="26" y2="13" style="stroke:rgb(0,0,0);stroke-width:1" />
+<ellipse cx="23.5" cy="14" rx="3" ry="2" style="fill:#000;stroke:#000;stroke-width:1" />
+<line x1="9" y1="20" x2="19" y2="20" style="stroke:rgb(0,0,0);stroke-width:1" />
+</svg>
+                <div class="char-block">
+                    <p>Экран {{prodInfo.display}}/ {{prodInfo.cpu}}/ RAM {{prodInfo.ram}} ГБ/HDD {{prodInfo.hdd}} ГБ/ SDD {{prodInfo.sdd}} ГБ/ {{prodInfo.va}}
+                    </p>
+                </div>
+            </div>
+            <div class="clear "></div>
+        </div>
+        <div class="popular">
+            <div class="all-char">
+                <p class="all-char-p">Технические характеристики</p>
+                <table class="table">
+                    <tr>
+                        <td>Процессор</td>
+                        <td>{{prodInfo.cpu}}</td>
+                    </tr>
+                    <tr>
+                        <td>Экран</td>
+                        <td>{{prodInfo.display}}</td>
+                    </tr>
+                    <tr>
+                        <td>Объем оперативной памяти</td>
+                        <td>{{prodInfo.ram}} ГБ</td>
+                    </tr>
+                    <tr>
+                        <td>Операционная система</td>
+                        <td>{{prodInfo.os | trueFalse}}</td>
+                    </tr>
+                    <tr>
+                        <td>HDD</td>
+                        <td>{{prodInfo.hdd | trueFalse}}</td>
+                    </tr>
+                    <tr>
+                        <td>SDD</td>
+                        <td>{{prodInfo.sdd | trueFalse}} </td>
+                    </tr>
+                    <tr>
+                        <td>Оптический привод</td>
+                        <td>{{prodInfo.cd | trueFalse}}</td>
+                    </tr>
+                    <tr>
+                        <td>Графический адаптер</td>
+                        <td>{{prodInfo.va}}</td>
+                    </tr>
+                    <tr>
+                        <td>Вес</td>
+                        <td>{{prodInfo.weight}} кг.</td>
+                    </tr>
+                    <tr>
+                        <td>Гарантия</td>
+                        <td>{{prodInfo.service}} месяцев</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="addOrder" ng-hide="showAdded" ng-cloak>
+            <p class="addOrder-title">{{alertText}}</p>
+        </div>
+    </div>
+
+</section>

@@ -1,0 +1,387 @@
+{
+    "notebook": [{
+            "name": " Asus ZenBook UX330",
+            "price": "31399",
+            "cpu": "Intel Core i7-6500U (2.5 - 3.1 ГГц)",
+            "display": "13.3 (1920x1080)",
+            "ram": "8",
+            "os": "Windows 10",
+            "osFamily": "windows",
+            "hdd": false,
+            "sdd": "512",
+            "cd": false,
+            "weight": "1.2",
+            "va": "Intel HD Graphics 520",
+            "service": "24",
+            "status": true,
+            "id": "Asus-ZenBook-UX330",
+            "images": [
+                "img/notebook/Asus-ZenBook-UX330.1.jpg", "img/notebook/Asus-ZenBook-UX330.2.jpg", "img/notebook/Asus-ZenBook-UX330.3.jpg"
+            ],
+            "family": "Asus",
+            "lastAdd": true
+        }, {
+            "name": "Lenovo IdeaPad Y900-17ISK",
+            "price": "67999",
+            "cpu": " Intel Core i7-6820HK (2.7 - 3.6 ГГц)",
+            "display": "17.3 (1920x1080)",
+            "ram": "8",
+            "os": "Windows 10",
+            "osFamily": "windows",
+            "hdd": "1000",
+            "sdd": "128",
+            "cd": "DVD Super Multi",
+            "weight": "4.6",
+            "va": "nVIdia GeForce GTX 980M",
+            "service": "12",
+            "status": true,
+            "id": "Lenovo-IdeaPad",
+            "images": [
+                "img/notebook/Lenovo-IdeaPad.1.jpg", "img/notebook/Lenovo-IdeaPad.2.jpg", "img/notebook/Lenovo-IdeaPad.3.jpg"
+            ],
+            "family": "Lenovo",
+            "lastAdd": false
+        }, {
+            "name": "MSI GS60 6QE Ghost Pro",
+            "price": "49824",
+            "cpu": "Intel Core i7-6700HQ (2.6 - 3.5 ГГц)",
+            "display": "15.6 (1920x1080)",
+            "ram": "16",
+            "os": "Windows 10",
+            "osFamily": "windows",
+            "hdd": "1000",
+            "sdd": false,
+            "cd": false,
+            "weight": "2",
+            "va": "nVidia GeForce GTX 970M",
+            "service": "12",
+            "status": false,
+            "id": "msi-gs60",
+            "images": [
+                "img/notebook/msi-gs60.1.jpg", "img/notebook/msi-gs60.2.jpg", "img/notebook/msi-gs60.3.jpg"
+            ],
+            "family": "MSI",
+            "lastAdd": false
+        }, {
+            "name": "Dell Alienware 17 R3",
+            "price": "75708",
+            "cpu": "Intel Core i7-6820HK (2.7 - 3.6 ГГц)",
+            "display": "17.3 (1920x1080)",
+            "ram": "16",
+            "os": "Windows 10",
+            "osFamily": "windows",
+            "hdd": "1000",
+            "sdd": "512",
+            "cd": false,
+            "weight": "3.78",
+            "va": "nVidia GeForce GTX 980M",
+            "service": "12",
+            "status": true,
+            "id": "Dell-Alienware",
+            "images": [
+                "img/notebook/Dell-Alienware.1.jpg", "img/notebook/Dell-Alienware.2.jpg", "img/notebook/Dell-Alienware.3.jpg"
+            ],
+            "family": "Dell",
+            "lastAdd": true
+        }, {
+            "name": "MacBook Air 11",
+            "price": "57999",
+            "cpu": "Intel Core i7 (2.2 ГГц)",
+            "display": "11.6 (1920x1080)",
+            "ram": "8",
+            "os": "Mac OS X El Capitan",
+            "osFamily": "mac",
+            "hdd": false,
+            "sdd": "512",
+            "cd": false,
+            "weight": "1.08",
+            "va": "Intel HD Graphics 6000",
+            "service": "12",
+            "status": false,
+            "id": "MacBook-Air",
+            "images": [
+                "img/notebook/MacBook-Air.1.jpg", "img/notebook/MacBook-Air.2.jpg", "img/notebook/MacBook-Air.3.jpg"
+            ],
+            "family": "Apple",
+            "lastAdd": false
+        }, {
+            "name": "Lenovo Yoga 900-13",
+            "price": "44499",
+            "cpu": "Intel Core i7-6560U (2.2 - 3.2 ГГц)",
+            "display": "13.3 (3200x1800)",
+            "ram": "8",
+            "os": "Windows 10",
+            "osFamily": "windows",
+            "hdd": false,
+            "sdd": "512",
+            "cd": false,
+            "weight": "1.29",
+            "va": "Intel Iris Graphics 540",
+            "service": "12",
+            "status": true,
+            "id": "Lenovo-Yoga",
+            "images": [
+                "img/notebook/Lenovo-Yoga.1.jpg", "img/notebook/Lenovo-Yoga.2.jpg", "img/notebook/Lenovo-Yoga.3.jpg"
+            ],
+            "family": "Lenovo",
+            "lastAdd": false
+        }, {
+            "name": "HP Spectre 13-v002ur",
+            "price": "41397",
+            "cpu": "Intel Core i7-6500U (2.5 - 3.1 ГГц)",
+            "display": "13.3 (1920x1080)",
+            "ram": "8",
+            "os": "Windows 10",
+            "osFamily": "windows",
+            "hdd": false,
+            "sdd": "256",
+            "cd": false,
+            "weight": "1.11",
+            "va": "Intel HD Graphics 520",
+            "service": "12",
+            "status": true,
+            "id": "HP-Spectre",
+            "images": [
+                "img/notebook/HP-Spectre.1.jpg", "img/notebook/HP-Spectre.2.jpg", "img/notebook/HP-Spectre.3.jpg"
+            ],
+            "family": "HP",
+            "lastAdd": false
+        }, {
+            "name": "MacBook Pro Retina 13",
+            "price": "70299",
+            "cpu": "Intel Core i7 (3.1 ГГц)",
+            "display": "13.3 (3200x1800)",
+            "ram": "16",
+            "os": "Mac OS X El Capitan",
+            "osFamily": "mac",
+            "hdd": false,
+            "sdd": "256",
+            "cd": false,
+            "weight": "1.62",
+            "va": "Intel Iris Graphics 6100",
+            "service": "12",
+            "status": true,
+            "id": "MacBook-Pro",
+            "images": [
+                "img/notebook/MacBook-Pro.1.jpg", "img/notebook/MacBook-Pro.2.jpg", "img/notebook/MacBook-Pro.3.jpg"
+            ],
+            "family": "Apple",
+            "lastAdd": true
+        }, {
+            "name": "Asus X555YI",
+            "price": "7599",
+            "cpu": "Intel Core i7 (3.1 ГГц)",
+            "display": "15.6 (1366x768)",
+            "ram": "4",
+            "os": false,
+            "osFamily": "dos",
+            "hdd": "500",
+            "sdd": false,
+            "cd": "DVD Super Multi",
+            "weight": "2.3",
+            "va": "AMD Radeon R5 M320",
+            "service": "12",
+            "status": false,
+            "id": "Asus-X",
+            "images": [
+                "img/notebook/Asus-X.1.jpg", "img/notebook/Asus-X.2.jpg", "img/notebook/Asus-X.3.jpg"
+            ],
+            "family": "Asus",
+            "lastAdd": false
+        }
+
+    ],
+    "computer": [{
+            "name": "Acer Aspire Z3-700 ",
+            "price": "14999",
+            "cpu": "Intel Celeron N3050 (1.6 ГГц)",
+            "display": "17.3 (1920x1080)",
+            "ram": "4",
+            "os": "Windows 10",
+            "osFamily": "windows",
+            "hdd": false,
+            "sdd": "32",
+            "cd": false,
+            "weight": "2.04",
+            "va": "Intel HD Graphics",
+            "service": "12",
+            "status": true,
+            "id": "Acer",
+            "images": [
+                "img/computer/Acer-Aspire-Z3.1.jpg", "img/computer/Acer-Aspire-Z3.2.jpg", "img/computer/Acer-Aspire-Z3.3.jpg"
+            ],
+            "family": "Acer",
+            "lastAdd": true
+        }, {
+            "name": "Asus V220ICGK",
+            "price": "18999",
+            "cpu": "Intel Core i3-6100U (2.3 ГГц)",
+            "display": "21.5 (1920x1080)",
+            "ram": "4",
+            "os": "Windows 10",
+            "osFamily": "windows",
+            "hdd": "1000",
+            "sdd": false,
+            "cd": "DVD Super Multi",
+            "weight": "7",
+            "va": "nVidia GeForce 930M",
+            "service": "12",
+            "status": true,
+            "id": "Asus-V220",
+            "images": [
+                "img/computer/Asus-V220.1.jpg", "img/computer/Asus-V220.2.jpg", "img/computer/Asus-V220.3.jpg"
+            ],
+            "family": "Asus",
+            "lastAdd": false
+        }, {
+            "name": "Asus Zen AiO Pro",
+            "price": "39604",
+            "cpu": "Intel Core i5-6400T (2.2 ГГц)",
+            "display": "23.8 (1920x1080)",
+            "ram": "8",
+            "os": "Windows 10",
+            "osFamily": "windows",
+            "hdd": "1000",
+            "sdd": "128",
+            "cd": false,
+            "weight": "7.3",
+            "va": "nVidia GeForce GTX 960M",
+            "service": "12",
+            "status": true,
+            "id": "Asus-Zen",
+            "images": [
+                "img/computer/Asus-Zen.1.jpg", "img/computer/Asus-Zen.2.jpg", "img/computer/Asus-Zen.3.jpg"
+            ],
+            "family": "Asus",
+            "lastAdd": true
+        }, {
+            "name": "ARTLINE Business M43",
+            "price": "19381",
+            "cpu": "Intel Core i3-6098P (3.6 ГГц)",
+            "display": "23.6 (1920x1080)",
+            "ram": "8",
+            "os": false,
+            "osFamily": "dos",
+            "hdd": "1000",
+            "sdd": "240",
+            "cd": false,
+            "weight": "7.3",
+            "va": "Intel HD Graphics",
+            "service": "38",
+            "status": true,
+            "id": "ARTLINE",
+            "images": [
+                "img/computer/ARTLINE.1.jpg", "img/computer/ARTLINE.2.jpg", "img/computer/ARTLINE.3.jpg"
+            ],
+            "family": "Asus",
+            "lastAdd": false
+        }, {
+            "name": "Dell Inspiron 3459",
+            "price": "18661",
+            "cpu": "Intel Core i3-6100U (2.3 ГГц)",
+            "display": "23.8 (1920x1080)",
+            "ram": "4",
+            "os": "Linux",
+            "osFamily": "linux",
+            "hdd": "1000",
+            "sdd": false,
+            "cd": false,
+            "weight": "6.28",
+            "va": "Intel HD Graphics 520",
+            "service": "24",
+            "status": false,
+            "id": "Dell-Inspiron-3459",
+            "images": [
+                "img/computer/Dell-Inspiron-3459.1.jpg", "img/computer/Dell-Inspiron-3459.2.jpg", "img/computer/Dell-Inspiron-3459.3.jpg"
+            ],
+            "family": "Dell",
+            "lastAdd": false
+        }, {
+            "name": "HP ProOne 600 G2",
+            "price": "21574",
+            "cpu": "Intel Core i3-6100 (3.7 ГГц)",
+            "display": "21.5 (1920x1080)",
+            "ram": "4",
+            "os": false,
+            "osFamily": "dos",
+            "hdd": "1000",
+            "sdd": false,
+            "cd": "DVD-Super-Multi",
+            "weight": "6.76",
+            "va": "Intel HD Graphics 530",
+            "service": "36",
+            "status": true,
+            "id": "HP-ProOne",
+            "images": [
+                "img/computer/HP-ProOne.1.jpg", "img/computer/HP-ProOne.2.jpg", "img/computer/HP-ProOne.3.jpg"
+            ],
+            "family": "HP",
+            "lastAdd": false
+        }, {
+            "name": "Apple iMac 27 Retina 5K",
+            "price": "145199",
+            "cpu": "Intel Core i7 (4.0 - 4.2 ГГц)",
+            "display": "27 (5120x2880)",
+            "ram": "32",
+            "os": "Mac OS X El Capitan",
+            "osFamily": "mac",
+            "hdd": false,
+            "sdd": "1000",
+            "cd": false,
+            "weight": "9.54",
+            "va": "AMD Radeon R9 M395X",
+            "service": "12",
+            "status": true,
+            "id": "iMac",
+            "images": [
+                "img/computer/iMac.1.jpg", "img/computer/iMac.2.jpg", "img/computer/iMac.3.jpg"
+            ],
+            "family": "Apple",
+            "lastAdd": true
+        }, {
+            "name": "Lenovo IdeaCentre 700",
+            "price": "19782",
+            "cpu": "Intel Core i3-6100 (3.7 ГГц)",
+            "display": "23.8 (1920x1080)",
+            "ram": "4",
+            "os": "Windows 10",
+            "osFamily": "windows",
+            "hdd": "1000",
+            "sdd": false,
+            "cd": false,
+            "weight": "8.5",
+            "va": "nVidia GeForce 930M",
+            "service": "12",
+            "status": false,
+            "id": "Lenovo-IdeaCentre",
+            "images": [
+                "img/computer/Lenovo-IdeaCentre.1.jpg", "img/computer/Lenovo-IdeaCentre.2.jpg", "img/computer/Lenovo-IdeaCentre.3.jpg"
+            ],
+            "family": "Lenovo",
+            "lastAdd": false
+        }, {
+            "name": "HP ProOne 600",
+            "price": "19110",
+            "cpu": "Intel Core i5-4590S (3.0 - 3.7 ГГц)",
+            "display": "23.8 (1920x1080)",
+            "ram": "4",
+            "os": false,
+            "osFamily": "dos",
+            "hdd": "500",
+            "sdd": false,
+            "cd": "DVD Super Multi Slim-tray",
+            "weight": "6.63",
+            "va": "Intel HD Graphics 4600",
+            "service": "12",
+            "status": true,
+            "id": "HP-ProOne-600",
+            "images": [
+                "img/computer/HP-ProOne-600.1.jpg", "img/computer/HP-ProOne-600.2.jpg", "img/computer/HP-ProOne-600.3.jpg"
+            ],
+            "family": "HP",
+            "lastAdd": false
+        }
+
+    ]
+
+}
