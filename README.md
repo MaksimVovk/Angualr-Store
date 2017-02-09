@@ -1,1 +1,1 @@
-# Angualr-Store
+# Angular-Store
